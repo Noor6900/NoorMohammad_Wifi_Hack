@@ -1,1 +1,25 @@
+NoorMohammad_Wifi_Hack
+Educational WiFi hacking script template
+By Noor Mohammad
+Requirements:
+- python
+- wpa-supplicant
+- pixiewps
+Usage:
+$ python mywifi.py --help
+"""
+def main():
+    print("Welcome to NoorMohammad_Wifi_Hack!")
+    print("This is an educational script. Do NOT use for illegal purposes.")
 
+if __name__ == "__main__":
+    main()
+EOF
+
+chmod +x mywifi.py
+pkg install -y git python wpa-supplicant pixiewps iw
+git clone https://github.com/NoorMohammad/NoorMohammad_Wifi_Hack
+cd NoorMohammad_Wifi_Hack
+chmod +x mywifi.py
+python mywifi.py --help
+python mywifi.py -i wlan0 -K
